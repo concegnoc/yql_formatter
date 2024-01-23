@@ -2,6 +2,7 @@
   "name": "yql-formatter",
   "displayName": "yql_formatter",
   "description": "Format all YQL code",
+  "publisher": "consegnoc",
   "repository": {
 		"url": "https://github.com/concegnoc/yql_formatter"
 	},
