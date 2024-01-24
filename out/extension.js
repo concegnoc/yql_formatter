@@ -47,7 +47,7 @@ function special_split(text) {
             }
             else if (text[right] == current) {
                 current = "";
-                arr.push(text.slice(left + 1, right));
+                arr.push(text[right] + text.slice(left + 1, right) + text[right]);
                 left = right;
             }
         }
@@ -87,7 +87,7 @@ function activate(context) {
             }
             ;
             //join array
-            newText = parts.join(`"`);
+            newText = parts.join("");
             //deletes old text and inserts new
             editor.edit(editBuilder => {
                 editBuilder.delete(new vscode.Range(document.positionAt(0), document.positionAt(text.length)));

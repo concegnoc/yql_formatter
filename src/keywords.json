@@ -75,4 +75,5 @@
 , "length"
 , "find"
 , "rfind"
+, "ilike"
 ]

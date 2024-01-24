@@ -6,7 +6,7 @@
   "repository": {
 		"url": "https://github.com/concegnoc/yql_formatter"
 	},
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.83.0"
   },
