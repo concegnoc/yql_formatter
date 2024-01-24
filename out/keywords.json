@@ -74,5 +74,6 @@
     "coalesce",
     "length",
     "find",
-    "rfind"
+    "rfind",
+    "ilike"
 ]
