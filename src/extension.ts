@@ -18,7 +18,7 @@ function special_split(text: String) {
                 left = right;
             } else if (text[right] == current) {
                 current = "";
-                arr.push(text.slice(left+1, right));
+                arr.push(text[right] + text.slice(left+1, right) + text[right]);
                 left = right;
             }
         }
@@ -60,7 +60,7 @@ export function activate(context: vscode.ExtensionContext) {
 			};
 			
 			//join array
-            newText = parts.join(`"`);
+            newText = parts.join("");
 
             //deletes old text and inserts new
             editor.edit(editBuilder => {
